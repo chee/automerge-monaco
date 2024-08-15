@@ -1,10 +1,20 @@
 {
   "name": "automerge-monaco",
   "description": "collaborative monaco-editor powered by automerge",
-  "keywords": ["automerge", "monaco", "editor", "collaborative", "crdt"],
-  "author": {"name": "chee"},
-  "repository": {"url": "https://github.com/chee/automerge-monaco"},
-  "version": "0.0.0",
+  "keywords": [
+    "automerge",
+    "monaco",
+    "editor",
+    "collaborative",
+    "crdt"
+  ],
+  "author": {
+    "name": "chee"
+  },
+  "repository": {
+    "url": "https://github.com/chee/automerge-monaco"
+  },
+  "version": "0.0.1",
   "type": "module",
   "files": [
     "dist",
