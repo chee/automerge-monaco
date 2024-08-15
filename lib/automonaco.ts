@@ -24,7 +24,6 @@ export default function automonaco(
 		handle.change(doc => {
 			for (let change of event.changes) {
 				let {rangeOffset, rangeLength, text} = change
-				if (!rangeOffset && !rangeLength) continue
 				splice(doc as Doc<unknown>, path, rangeOffset, rangeLength, text)
 			}
 		})
@@ -40,9 +39,7 @@ export default function automonaco(
 			editor.getSelections(),
 			payload.patches.map(patch => {
 				if (!["del", "splice"].includes(patch.action)) {
-					throw new Error(
-						"Unexpected action for text editor: " + patch.action
-					)
+					throw new Error("Unexpected action for text editor: " + patch.action)
 				}
 				let startOffset = patch.path[patch.path.length - 1] as number
 				let endOffset =
