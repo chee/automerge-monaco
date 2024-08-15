@@ -1,0 +1,45 @@
+{
+  "name": "automerge-monaco",
+  "description": "collaborative monaco-editor powered by automerge",
+  "keywords": ["automerge", "monaco", "editor", "collaborative", "crdt"],
+  "author": {"name": "chee"},
+  "repository": {"url": "https://github.com/chee/automerge-monaco"},
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "main": "./dist/automonaco.umd.cjs",
+  "module": "./dist/automonaco.js",
+  "types": "./index.d.ts",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./dist/automonaco.js",
+    "require": "./dist/automonaco.umd.cjs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@automerge/automerge-repo": "2.0.0-alpha.5",
+    "@automerge/automerge-repo-network-broadcastchannel": "2.0.0-alpha.5",
+    "@automerge/automerge-repo-network-websocket": "2.0.0-alpha.5",
+    "@automerge/automerge-repo-storage-indexeddb": "2.0.0-alpha.5",
+    "@bigmistqke/repl": "^0.1.5",
+    "@monaco-editor/loader": "^1.4.0",
+    "monaco-editor": "^0.50.0",
+    "solid-js": "^1.8.21",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vite-plugin-monaco-editor": "^1.1.0",
+    "vite-plugin-wasm": "^3.3.0"
+  },
+  "peerDependencies": {
+    "@automerge/automerge-repo": "2.0.0-alpha.5",
+    "@monaco-editor/loader": "^1.4.0",
+    "monaco-editor": "^0.50.0"
+  }
+}
