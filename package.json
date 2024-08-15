@@ -4,7 +4,6 @@
   "keywords": ["automerge", "monaco", "editor", "collaborative", "crdt"],
   "author": {"name": "chee"},
   "repository": {"url": "https://github.com/chee/automerge-monaco"},
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "files": [
