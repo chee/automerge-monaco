@@ -8,6 +8,10 @@ export default defineConfig({
 			entry: "./lib/automonaco.ts",
 			name: "Automonaco",
 			fileName: "automonaco",
+			formats: ["es", "cjs"],
+		},
+		rollupOptions: {
+			external: ["@automerge/automerge-repo/slim"],
 		},
 	},
 	plugins: [wasm(), monacoEditorPlugin],

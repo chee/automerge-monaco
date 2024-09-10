@@ -20,13 +20,13 @@
     "dist",
     "index.d.ts"
   ],
-  "main": "./dist/automonaco.umd.cjs",
+  "main": "./dist/automonaco.cjs",
   "module": "./dist/automonaco.js",
   "types": "./index.d.ts",
   "exports": {
     "types": "./index.d.ts",
     "import": "./dist/automonaco.js",
-    "require": "./dist/automonaco.umd.cjs"
+    "require": "./dist/automonaco.cjs"
   },
   "scripts": {
     "dev": "vite",
@@ -37,10 +37,8 @@
     "@automerge/automerge-repo-network-broadcastchannel": "2.0.0-alpha.5",
     "@automerge/automerge-repo-network-websocket": "2.0.0-alpha.5",
     "@automerge/automerge-repo-storage-indexeddb": "2.0.0-alpha.5",
-    "@bigmistqke/repl": "^0.1.5",
     "@monaco-editor/loader": "^1.4.0",
     "monaco-editor": "^0.50.0",
-    "solid-js": "^1.8.21",
     "typescript": "^5.4.5",
     "vite": "^5.2.10",
     "vite-plugin-monaco-editor": "^1.1.0",
