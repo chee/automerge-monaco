@@ -30,7 +30,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "mk": "tsc && vite build"
   },
   "devDependencies": {
     "@automerge/automerge-repo": "2.0.0-alpha.5",

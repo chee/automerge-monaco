@@ -4,6 +4,7 @@ import monacoEditorPlugin from "vite-plugin-monaco-editor"
 
 export default defineConfig({
 	build: {
+		sourcemap: true,
 		lib: {
 			entry: "./lib/automonaco.ts",
 			name: "Automonaco",
