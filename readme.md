@@ -9,6 +9,7 @@ This plugin adds collaborative editing to
 ```ts
 import {Repo} from "@automerge/automerge-repo"
 import automonaco from "automerge-monaco"
+import loader from "@monaco-editor/loader"
 
 // set up a repo and create a doc handle.
 // see https://automerge.org/docs/quickstart/
