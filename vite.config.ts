@@ -1,6 +1,7 @@
 import {defineConfig} from "vite"
 import wasm from "vite-plugin-wasm"
 import monacoEditorPlugin from "vite-plugin-monaco-editor"
+import dts from "vite-plugin-dts"
 
 export default defineConfig({
 	build: {
@@ -15,7 +16,7 @@ export default defineConfig({
 			external: ["@automerge/automerge-repo/slim"],
 		},
 	},
-	plugins: [wasm(), monacoEditorPlugin],
+	plugins: [wasm(), monacoEditorPlugin, dts()],
 	worker: {
 		format: "es",
 	},

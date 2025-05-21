@@ -1,13 +1,16 @@
 import automonaco from "../lib/automonaco.ts"
 import loader from "@monaco-editor/loader"
-import {Repo, isValidAutomergeUrl} from "@automerge/automerge-repo"
-import {BroadcastChannelNetworkAdapter} from "@automerge/automerge-repo-network-broadcastchannel"
-import {BrowserWebSocketClientAdapter} from "@automerge/automerge-repo-network-websocket"
-import {IndexedDBStorageAdapter} from "@automerge/automerge-repo-storage-indexeddb"
+import {
+	Repo,
+	isValidAutomergeUrl,
+	BroadcastChannelNetworkAdapter,
+	IndexedDBStorageAdapter,
+	WebSocketClientAdapter,
+} from "@automerge/vanillajs"
 
 const repo = new Repo({
 	network: [
-		new BrowserWebSocketClientAdapter("wss://sync.automerge.org"),
+		new WebSocketClientAdapter("wss://sync.automerge.org"),
 		new BroadcastChannelNetworkAdapter(),
 	],
 	storage: new IndexedDBStorageAdapter(),

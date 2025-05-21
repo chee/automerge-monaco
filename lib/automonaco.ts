@@ -1,4 +1,4 @@
-import type {editor} from "monaco-editor/esm/vs/editor/editor.api.d.ts"
+import type {editor} from "monaco-editor/esm/vs/editor/editor.api.ts"
 
 import {
 	splice,
