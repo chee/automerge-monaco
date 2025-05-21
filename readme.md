@@ -9,8 +9,6 @@ This plugin adds collaborative editing to
 ```ts
 import {Repo} from "@automerge/automerge-repo"
 import automonaco from "automerge-monaco"
-import {EditorView} from "@codemirror/view"
-import {basicSetup} from "codemirror"
 
 // set up a repo and create a doc handle.
 // see https://automerge.org/docs/quickstart/
